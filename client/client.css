@@ -1,0 +1,174 @@
+/* 
+    Document   : client
+    Created on : 2011-1-10, 15:34:48
+    Author     : Neekey(NiYunjian) <ni184775761@gmail.com>
+    Description:
+        stylesheet for the client.html
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body {
+    text-align: center;
+}
+#container {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+#playerinfo {
+    border-top: 1px dashed #333;
+    margin: 15px 0 5px 0;
+    padding-top: 5px;
+}
+#ready {
+    width: 100px;
+    height: 30px;
+    color: white;
+    border-radius:10px;
+    margin: auto;
+}
+
+.ready {
+    background-color: #629B05;
+    cursor: pointer;
+}
+.state_wait {
+    background-color: #999;
+}
+.notready {
+    background-color: #930F03;
+    cursor: pointer;
+}
+.gaming {
+    background-color: #F22479;
+}
+.clear {
+    background-color: #1783CB;
+    cursor: pointer;
+}
+#role_deceide {
+    display: none;
+    padding: 2px;
+    width: 150px;
+    color: white;
+    border-radius:10px;
+    margin: auto;
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    z-index: 4;
+}
+.roll {
+    cursor: pointer;
+    background-color: #AF0848;
+}
+.wait_roll {
+    background-color: #999;
+}
+
+#game {
+    display: none;
+    width: 300px;
+    position: relative;
+}
+
+#chesssession {
+    position: relative;
+    margin: auto auto 10px auto;
+    width: 300px;
+    height: 300px;
+}
+#turn_flag {
+    width: 150px;
+    height: 20px;
+    color: white;
+    border-radius:10px;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    z-index: 4;
+}
+.your_turn {
+    background-color: #1783CB;
+}
+.comp_turn {
+    background-color: #F22479;
+}
+
+#chesscover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+}
+#chesscover2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+}
+#chessgrids {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+}
+.chessgrid {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+.chessgrid_empty_black:hover {
+    background-image: url("images/chess_black.png");
+    opacity: 0.5;
+    cursor: pointer;
+}
+.chessgrid_empty_white:hover {
+    background-image: url("images/chess_white.png");
+    opacity: 0.5;
+    cursor: pointer;
+}
+.chessgrid_black {
+    background-image: url("images/chess_black.png");
+}
+.chessgrid_white {
+    background-image: url("images/chess_white.png");
+}
+
+#chat {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 300px;
+    left: 50px;
+    text-align: center;
+    background-color: #629B05;
+    border-radius:5px;
+    color: white;
+    z-index: 5;
+}
+
+#welcome {
+    display: none;
+    background-color: #E33903;
+    color: white;
+    padding: 2px 0 2px 0;
+    margin-bottom: 10px;
+}
+

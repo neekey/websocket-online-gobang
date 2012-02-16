@@ -1,0 +1,51 @@
+<!--
+author Neekey(Niyunjian) <ni184775761@gmail.com>
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="client.css" />
+    <script type="text/javascript" src="jquery-1.4.2.min.js" ></script>
+    <script type="text/javascript" src="websocket.js" ></script>
+    <script type="text/javascript" src="client.js"></script>
+  </head>
+  <body>
+      <div id="container">
+          <div id="welcome"></div>
+          <div id="log"></div>
+          <div id="name_div">
+              <form>
+                  <input type="text" id="name" value="" placeholder="input your name" />
+                  <input type="button" id="send_name" value="send" />
+              </form>
+          </div>
+          <div id="game">
+              <div id="chat" ></div>
+              <div id="playerinfo">
+              </div>
+              <div id="chesssession">
+                  <div id="chesscover"></div>
+                  <div id="chesscover2"></div>
+                  <canvas id="chessboard" width="300" height="300"></canvas>
+                  <div id="chessgrids" >
+                  </div>
+              </div>
+              <div id="ready" class="ready">
+                Ready
+              </div>
+              <div id="role_deceide" class="roll">
+                  Roll Number!
+              </div>
+              <div id="turn_flag" class="" ></div>
+              <div id="msg_div">
+                  <form>
+                      <input type="text" id="msg" value="" placeholder="send msg to sever" />
+                      <input type="button" id="send_msg" value="send" />
+                  </form>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
